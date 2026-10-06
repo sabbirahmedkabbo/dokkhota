@@ -48,7 +48,7 @@ const Header = () => {
                   {t('header.gov')}
                 </span>
                 <div className="flex items-center gap-2">
-                  <span className="font-bold text-xl sm:text-2xl text-brand-green-dark">Dokkhota Shetu</span>
+                  <span className="font-bold text-xl sm:text-2xl text-brand-green-dark">{language === 'bn' ? 'দক্ষতা সেতু' : 'Dokkhota Shetu'}</span>
                   <span className="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded font-bold">{t('header.beta')}</span>
                 </div>
               </Link>

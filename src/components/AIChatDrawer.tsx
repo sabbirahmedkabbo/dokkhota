@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { X, Send, Sparkles, Loader2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../LanguageContext';
 
 const SUGGESTED_PROMPTS = [
   "I finished SSC. What can I do?",
@@ -13,12 +14,19 @@ const SUGGESTED_PROMPTS = [
 ];
 
 const AIChatDrawer = () => {
+  const { language } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{role: string, content: string, hasActions?: boolean}[]>([
     {
       role: 'assistant',
-      content: "👋 Hello! I'm your Dokkhota Shetu AI Career Copilot.\n\nTell me what you enjoy, what you've studied, or what kind of work you're interested in — I'll help you explore suitable pathways.",
-      hasActions: false
+            content: language === 'bn' 
+        ? `👋 হ্যালো! আমি আপনার দক্ষতা সেতু এআই ক্যারিয়ার কোপাইলট।
+
+আপনি কী করতে পছন্দ করেন, কী পড়াশোনা করেছেন, বা কোন ধরণের কাজে আগ্রহী তা আমাকে জানান — আমি আপনাকে উপযুক্ত পথ খুঁজতে সাহায্য করব।`
+        : `👋 Hello! I'm your Dokkhota Shetu AI Career Copilot.
+
+Tell me what you enjoy, what you've studied, or what kind of work you're interested in - I'll help you explore suitable pathways.`,
+      hasActions: true
     }
   ]);
   const [inputValue, setInputValue] = useState('');

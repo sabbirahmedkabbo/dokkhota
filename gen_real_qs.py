@@ -1,0 +1,339 @@
+import json
+
+qs_data = {
+    'office': [
+        ("What is the primary function of MS Excel?", "এমএস এক্সেল (MS Excel)-এর মূল কাজ কী?", 
+         ["Data analysis and spreadsheets", "Word processing", "Photo editing", "Video creation"], 
+         ["ডেটা অ্যানালাইসিস এবং স্প্রেডশিট", "ওয়ার্ড প্রসেসিং", "ছবি সম্পাদনা", "ভিডিও তৈরি"]),
+        ("Which keyboard shortcut is used to copy text?", "টেক্সট কপি করার জন্য কোন কীবোর্ড শর্টকাট ব্যবহার করা হয়?", 
+         ["Ctrl + C", "Ctrl + V", "Ctrl + P", "Ctrl + X"], 
+         ["Ctrl + C", "Ctrl + V", "Ctrl + P", "Ctrl + X"]),
+        ("What does 'CC' stand for in an email?", "ইমেইলে 'CC'-এর পূর্ণরূপ কী?", 
+         ["Carbon Copy", "Creative Control", "Computer Copy", "Custom Code"], 
+         ["কার্বন কপি (Carbon Copy)", "ক্রিয়েটিভ কন্ট্রোল", "কম্পিউটার কপি", "কাস্টম কোড"]),
+        ("Which tool is best for online video conferencing?", "অনলাইন ভিডিও কনফারেন্সিংয়ের জন্য কোন টুলটি সবচেয়ে ভালো?", 
+         ["Zoom", "Notepad", "MS Paint", "Calculator"], 
+         ["জুম (Zoom)", "নোটপ্যাড", "এমএস পেইন্ট", "ক্যালকুলেটর"]),
+        ("How do you securely store passwords?", "কীভাবে পাসওয়ার্ড সুরক্ষিতভাবে সংরক্ষণ করবেন?", 
+         ["Use a password manager", "Write them on a sticky note", "Use the same password everywhere", "Share them with colleagues"], 
+         ["পাসওয়ার্ড ম্যানেজার ব্যবহার করে", "স্টিকি নোটে লিখে রাখা", "সব জায়গায় একই পাসওয়ার্ড ব্যবহার করা", "সহকর্মীদের সাথে শেয়ার করা"]),
+        ("What is Google Drive primarily used for?", "গুগল ড্রাইভ (Google Drive) প্রধানত কী কাজে ব্যবহৃত হয়?", 
+         ["Cloud storage", "Playing games", "Typing speed test", "Antivirus scan"], 
+         ["ক্লাউড স্টোরেজ", "গেম খেলা", "টাইপিং স্পিড পরীক্ষা", "অ্যান্টিভাইরাস স্ক্যান"]),
+        ("Which program is used to create presentations?", "প্রেজেন্টেশন তৈরি করতে কোন প্রোগ্রাম ব্যবহার করা হয়?", 
+         ["MS PowerPoint", "MS Word", "MS Excel", "Adobe Photoshop"], 
+         ["এমএস পাওয়ারপয়েন্ট", "এমএস ওয়ার্ড", "এমএস এক্সেল", "অ্যাডোবি ফটোশপ"]),
+        ("What is a strong password?", "শক্তিশালী পাসওয়ার্ড কোনটি?", 
+         ["A mix of letters, numbers, and symbols", "Your name and birth year", "12345678", "password123"], 
+         ["অক্ষর, সংখ্যা এবং চিহ্নের মিশ্রণ", "আপনার নাম ও জন্ম সাল", "12345678", "password123"]),
+        ("What should you do if you receive a suspicious email link?", "সন্দেহজনক ইমেইল লিংক পেলে আপনার কী করা উচিত?", 
+         ["Do not click and report it", "Click it to see what it is", "Forward it to friends", "Reply to the sender"], 
+         ["লিংকে ক্লিক না করে রিপোর্ট করা", "ক্লিক করে দেখা", "বন্ধুদের ফরোয়ার্ড করা", "প্রেরককে উত্তর দেওয়া"]),
+        ("Which format is best for sending uneditable text documents?", "পরিবর্তন করা যায় না এমন ডকুমেন্ট পাঠানোর জন্য কোন ফরম্যাট সেরা?", 
+         ["PDF", "DOCX", "TXT", "XLSX"], 
+         ["পিডিএফ (PDF)", "ডকএক্স (DOCX)", "টেক্সট (TXT)", "এক্সএলএসএক্স (XLSX)"]),
+        ("What is the function of an Operating System?", "অপারেটিং সিস্টেমের কাজ কী?", 
+         ["Manages computer hardware and software", "Cleans the keyboard", "Increases internet speed", "Prints documents"], 
+         ["কম্পিউটার হার্ডওয়্যার এবং সফটওয়্যার পরিচালনা করা", "কীবোর্ড পরিষ্কার করা", "ইন্টারনেট স্পিড বাড়ানো", "ডকুমেন্ট প্রিন্ট করা"]),
+        ("What is a browser?", "ব্রাউজার কী?", 
+         ["A software to access the internet", "A type of computer monitor", "A typing tool", "A database system"], 
+         ["ইন্টারনেট অ্যাক্সেস করার সফটওয়্যার", "এক ধরনের মনিটর", "টাইপিং টুল", "ডেটাবেস সিস্টেম"]),
+        ("How can you restore a deleted file?", "ডিলিট করা ফাইল কীভাবে ফিরে পাবেন?", 
+         ["From the Recycle Bin", "Restart the computer", "Reinstall Windows", "It is impossible"], 
+         ["রিসাইকেল বিন থেকে", "কম্পিউটার রিস্টার্ট করে", "উইন্ডোজ রি-ইনস্টল করে", "এটি অসম্ভব"]),
+        ("What is the main purpose of a firewall?", "ফায়ারওয়ালের মূল উদ্দেশ্য কী?", 
+         ["To protect a network from unauthorized access", "To cool down the computer", "To speed up typing", "To organize files"], 
+         ["নেটওয়ার্ককে অননুমোদিত অ্যাক্সেস থেকে রক্ষা করা", "কম্পিউটার ঠান্ডা রাখা", "টাইপিং স্পিড বাড়ানো", "ফাইল গুছিয়ে রাখা"]),
+        ("What does 'BCC' do in an email?", "ইমেইলে 'BCC' কী কাজ করে?", 
+         ["Hides the recipient's email address from others", "Sends the email faster", "Adds an attachment", "Deletes the email"], 
+         ["অন্যদের থেকে প্রাপকের ইমেইল ঠিকানা গোপন রাখে", "দ্রুত ইমেইল পাঠায়", "অ্যাটাচমেন্ট যোগ করে", "ইমেইল মুছে ফেলে"]),
+        ("Which shortcut is used to undo an action?", "কোন শর্টকাট ব্যবহার করে আনডু (Undo) করা হয়?", 
+         ["Ctrl + Z", "Ctrl + Y", "Ctrl + A", "Ctrl + S"], 
+         ["Ctrl + Z", "Ctrl + Y", "Ctrl + A", "Ctrl + S"]),
+        ("What is 'phishing'?", "'ফিশিং' (Phishing) কী?", 
+         ["A fraudulent attempt to obtain sensitive information", "A new computer game", "A typing technique", "A way to connect to Wi-Fi"], 
+         ["গোপনীয় তথ্য হাতিয়ে নেওয়ার প্রতারণামূলক চেষ্টা", "একটি নতুন গেম", "টাইপিং কৌশল", "ওয়াই-ফাই কানেক্ট করার উপায়"]),
+        ("Which symbol is used to create a formula in Excel?", "এক্সেলে ফর্মুলা তৈরি করতে কোন চিহ্ন ব্যবহৃত হয়?", 
+         ["=", "+", "-", "/"], 
+         ["=", "+", "-", "/"]),
+        ("What does RAM stand for?", "RAM-এর পূর্ণরূপ কী?", 
+         ["Random Access Memory", "Read Access Memory", "Run All Machines", "Rapid Action Memory"], 
+         ["র‍্যান্ডম অ্যাক্সেস মেমোরি", "রিড অ্যাক্সেস মেমোরি", "রান অল মেশিনস", "র‍্যাপিড অ্যাকশন মেমোরি"]),
+        ("Why is data backup important?", "ডেটা ব্যাকআপ কেন গুরুত্বপূর্ণ?", 
+         ["To prevent data loss in case of hardware failure", "To make the computer run faster", "To save electricity", "To print documents easily"], 
+         ["হার্ডওয়্যার নষ্ট হলে ডেটা হারানো রোধ করতে", "কম্পিউটার দ্রুত চালাতে", "বিদ্যুৎ সাশ্রয় করতে", "সহজে প্রিন্ট করতে"])
+    ],
+    'technical': [
+        ("What is the standard unit of electrical current?", "বৈদ্যুতিক প্রবাহের (Current) আদর্শ একক কী?", 
+         ["Ampere", "Volt", "Watt", "Ohm"], 
+         ["অ্যাম্পিয়ার (Ampere)", "ভোল্ট", "ওয়াট", "ওহম"]),
+        ("Which wire is typically used for earthing?", "আর্থিংয়ের জন্য সাধারণত কোন রঙের তার ব্যবহার করা হয়?", 
+         ["Green/Yellow", "Red", "Black", "Blue"], 
+         ["সবুজ/হলুদ", "লাল", "কালো", "নীল"]),
+        ("What tool is used to measure electrical voltage?", "বৈদ্যুতিক ভোল্টেজ মাপতে কোন যন্ত্র ব্যবহৃত হয়?", 
+         ["Multimeter", "Thermometer", "Barometer", "Speedometer"], 
+         ["মাল্টিমিটার", "থার্মোমিটার", "ব্যারোমিটার", "স্পিডোমিটার"]),
+        ("What should you wear before handling live wires?", "লাইভ তার ধরার আগে কী পরা উচিত?", 
+         ["Insulated rubber gloves", "Cotton gloves", "Leather boots", "Nothing"], 
+         ["ইনসুলেটেড রাবারের গ্লাভস", "সুতির গ্লাভস", "চামড়ার বুট", "কিছু না"]),
+        ("What does an MCB do in a circuit?", "সার্কিটে MCB-এর কাজ কী?", 
+         ["Protects against overcurrent and short circuits", "Increases voltage", "Decreases resistance", "Stores electrical energy"], 
+         ["ওভারকারেন্ট এবং শর্ট সার্কিট থেকে রক্ষা করা", "ভোল্টেজ বাড়ানো", "রেজিস্ট্যান্স কমানো", "বিদ্যুৎ শক্তি সঞ্চয় করা"]),
+        ("Which material is a good conductor of electricity?", "কোন উপাদানটি বিদ্যুতের ভালো পরিবাহী?", 
+         ["Copper", "Wood", "Rubber", "Glass"], 
+         ["তামা (Copper)", "কাঠ", "রাবার", "কাঁচ"]),
+        ("What is the purpose of a fuse?", "ফিউজের উদ্দেশ্য কী?", 
+         ["To break the circuit if the current exceeds a safe level", "To generate power", "To store current", "To measure voltage"], 
+         ["বিদ্যুৎ প্রবাহ নিরাপদ মাত্রা অতিক্রম করলে সার্কিট ভেঙে দেওয়া", "বিদ্যুৎ তৈরি করা", "কারেন্ট সঞ্চয় করা", "ভোল্টেজ মাপা"]),
+        ("What is the formula for Ohm's Law?", "ওহমের সূত্রের সমীকরণ কোনটি?", 
+         ["V = I x R", "V = I / R", "I = V x R", "R = V x I"], 
+         ["V = I x R", "V = I / R", "I = V x R", "R = V x I"]),
+        ("Which tool is best for cutting wires?", "তার কাটার জন্য কোন টুলটি সেরা?", 
+         ["Wire strippers/cutters", "Hammer", "Screwdriver", "Wrench"], 
+         ["ওয়্যার স্ট্রিপার/কাটার", "হাতুড়ি", "স্ক্রুড্রাইভার", "রেঞ্চ"]),
+        ("What does 'AC' stand for in electrical terms?", "বিদ্যুতের ক্ষেত্রে 'AC'-এর পূর্ণরূপ কী?", 
+         ["Alternating Current", "Actual Current", "Active Charge", "Auto Circuit"], 
+         ["অল্টারনেটিং কারেন্ট", "অ্যাকচুয়াল কারেন্ট", "অ্যাক্টিভ চার্জ", "অটো সার্কিট"]),
+        ("What should you do first in an electrical emergency?", "বৈদ্যুতিক দুর্ঘটনার ক্ষেত্রে প্রথমে কী করা উচিত?", 
+         ["Turn off the main power supply", "Pour water", "Touch the person", "Run away"], 
+         ["মূল পাওয়ার সাপ্লাই বন্ধ করা", "পানি ঢালা", "আক্রান্ত ব্যক্তিকে ধরা", "পালিয়ে যাওয়া"]),
+        ("What type of fire extinguisher is used for electrical fires?", "বৈদ্যুতিক আগুনে কোন ধরনের ফায়ার এক্সটিংগুইশার ব্যবহৃত হয়?", 
+         ["CO2 or Dry Chemical", "Water", "Foam", "Wet Chemical"], 
+         ["CO2 বা ড্রাই কেমিক্যাল", "পানি", "ফোম", "ওয়েট কেমিক্যাল"]),
+        ("Why are tools insulated?", "টুলসগুলো কেন ইনসুলেটেড করা থাকে?", 
+         ["To prevent electric shocks", "To make them look good", "To keep them warm", "To increase their weight"], 
+         ["বৈদ্যুতিক শক রোধ করতে", "সুন্দর দেখানোর জন্য", "গরম রাখতে", "ওজন বাড়াতে"]),
+        ("What is the unit of electrical resistance?", "বৈদ্যুতিক রেজিস্ট্যান্সের একক কী?", 
+         ["Ohm", "Watt", "Joule", "Ampere"], 
+         ["ওহম", "ওয়াট", "জুল", "অ্যাম্পিয়ার"]),
+        ("Which device converts AC to DC?", "কোন যন্ত্র AC-কে DC-তে রূপান্তর করে?", 
+         ["Rectifier", "Transformer", "Generator", "Motor"], 
+         ["রেকটিফায়ার", "ট্রান্সফরমার", "জেনারেটর", "মোটর"]),
+        ("What is the main function of a transformer?", "ট্রান্সফরমারের মূল কাজ কী?", 
+         ["To step up or step down voltage", "To convert AC to DC", "To store power", "To measure current"], 
+         ["ভোল্টেজ বাড়ানো বা কমানো", "AC-কে DC-তে রূপান্তর করা", "বিদ্যুৎ সঞ্চয় করা", "কারেন্ট মাপা"]),
+        ("What does PPE stand for?", "PPE-এর পূর্ণরূপ কী?", 
+         ["Personal Protective Equipment", "Power Plant Engine", "Primary Power Element", "Public Protection Entity"], 
+         ["পার্সোনাল প্রোটেক্টিভ ইকুইপমেন্ট", "পাওয়ার প্ল্যান্ট ইঞ্জিন", "প্রাইমারি পাওয়ার এলিমেন্ট", "পাবলিক প্রোটেকশন এন্টিটি"]),
+        ("Which of the following is an insulator?", "নিচের কোনটি ইনসুলেটর (অপরিবাহী)?", 
+         ["Plastic", "Iron", "Gold", "Aluminum"], 
+         ["প্লাস্টিক", "লোহা", "সোনা", "অ্যালুমিনিয়াম"]),
+        ("What is a short circuit?", "শর্ট সার্কিট কী?", 
+         ["An abnormal connection between two nodes of a circuit", "A broken wire", "A low voltage state", "A type of battery"], 
+         ["সার্কিটের দুটি নোডের মধ্যে অস্বাভাবিক সংযোগ", "ছেঁড়া তার", "নিম্ন ভোল্টেজ অবস্থা", "এক ধরনের ব্যাটারি"]),
+        ("How often should safety gear be inspected?", "সেফটি গিয়ার কতদিন পর পর পরীক্ষা করা উচিত?", 
+         ["Before every use", "Once a year", "Only when broken", "Never"], 
+         ["প্রতিবার ব্যবহারের আগে", "বছরে একবার", "শুধুমাত্র নষ্ট হলে", "কখনো নয়"])
+    ],
+    'care': [
+        ("What is the normal body temperature for an adult?", "একজন প্রাপ্তবয়স্ক মানুষের স্বাভাবিক শরীরের তাপমাত্রা কত?", 
+         ["98.6°F (37°C)", "100.4°F (38°C)", "95.0°F (35°C)", "102.0°F (39°C)"], 
+         ["৯৮.৬°F (৩৭°C)", "১০০.৪°F (৩৮°C)", "৯৫.০°F (৩৫°C)", "১০২.০°F (৩৯°C)"]),
+        ("What is the most effective way to prevent the spread of infection?", "সংক্রমণ ছড়ানো রোধ করার সবচেয়ে কার্যকরী উপায় কী?", 
+         ["Proper handwashing", "Wearing a mask all the time", "Staying indoors", "Drinking warm water"], 
+         ["সঠিকভাবে হাত ধোয়া", "সারাক্ষণ মাস্ক পরা", "ঘরের ভেতরে থাকা", "গরম পানি পান করা"]),
+        ("How should you move a patient with mobility issues?", "চলাচলে অক্ষম রোগীকে কীভাবে নড়াচড়া করাবেন?", 
+         ["Use proper lifting techniques and assistive devices", "Pull them by the arms", "Lift them entirely by yourself", "Let them struggle"], 
+         ["সঠিক লিফটিং কৌশল এবং সহায়ক ডিভাইস ব্যবহার করে", "হাত ধরে টেনে তোলা", "একা একা পুরো তুলে নেওয়া", "তাদের নিজেদের চেষ্টা করতে দেওয়া"]),
+        ("What does CPR stand for?", "CPR-এর পূর্ণরূপ কী?", 
+         ["Cardiopulmonary Resuscitation", "Care Patient Recovery", "Cardiac Pulse Rate", "Clinical Patient Response"], 
+         ["কার্ডিওপালমোনারি রিসাসিটেশন", "কেয়ার পেশেন্ট রিকভারি", "কার্ডিয়াক পালস রেট", "ক্লিনিক্যাল পেশেন্ট রেসপন্স"]),
+        ("What should you do if a patient starts choking?", "রোগীর গলায় কিছু আটকে গেলে (Choking) কী করবেন?", 
+         ["Perform the Heimlich maneuver", "Give them water", "Lay them flat on the bed", "Wait for it to pass"], 
+         ["হেইমলিচ ম্যানুভার (Heimlich maneuver) প্রয়োগ করা", "পানি খেতে দেওয়া", "বিছানায় সোজা করে শুইয়ে দেওয়া", "অপেক্ষা করা"]),
+        ("Which of the following is a sign of dehydration in the elderly?", "বয়স্কদের মধ্যে পানিশূন্যতার (Dehydration) লক্ষণ কোনটি?", 
+         ["Dark yellow urine and dry mouth", "Excessive sweating", "High blood pressure", "Weight gain"], 
+         ["গাঢ় হলুদ প্রস্রাব এবং মুখ শুকিয়ে যাওয়া", "অতিরিক্ত ঘাম", "উচ্চ রক্তচাপ", "ওজন বৃদ্ধি"]),
+        ("How often should a bedridden patient be turned to prevent bedsores?", "বেডসোর রোধে শয্যাশায়ী রোগীকে কতক্ষণ পর পর পাশ ফেরানো উচিত?", 
+         ["Every 2 hours", "Once a day", "Every 6 hours", "Only when they ask"], 
+         ["প্রতি ২ ঘণ্টা পর পর", "দিনে একবার", "প্রতি ৬ ঘণ্টা পর পর", "তারা বললে তখন"]),
+        ("What is the primary role of a caregiver?", "একজন কেয়ারগিভারের প্রধান কাজ কী?", 
+         ["To assist with daily living activities and ensure safety", "To prescribe medication", "To perform surgeries", "To manage the patient's finances"], 
+         ["দৈনন্দিন কাজে সহায়তা করা এবং নিরাপত্তা নিশ্চিত করা", "ওষুধ লিখে দেওয়া", "অস্ত্রোপচার করা", "রোগীর আর্থিক হিসাব রাখা"]),
+        ("What should you do before administering medication?", "ওষুধ খাওয়ানোর আগে কী করা উচিত?", 
+         ["Check the prescription, dosage, and patient identity", "Taste it first", "Mix it with food secretly", "Give double dose to act faster"], 
+         ["প্রেসক্রিপশন, মাত্রা এবং রোগীর পরিচয় যাচাই করা", "আগে নিজে স্বাদ পরীক্ষা করা", "গোপনে খাবারের সাথে মিশিয়ে দেওয়া", "দ্রুত কাজ করার জন্য দ্বিগুণ দেওয়া"]),
+        ("What is a normal resting heart rate for adults?", "প্রাপ্তবয়স্কদের স্বাভাবিক বিশ্রামের হার্ট রেট কত?", 
+         ["60 to 100 beats per minute", "40 to 50 beats per minute", "120 to 140 beats per minute", "10 to 20 beats per minute"], 
+         ["মিনিটে ৬০ থেকে ১০০ বিট", "মিনিটে ৪০ থেকে ৫০ বিট", "মিনিটে ১২০ থেকে ১৪০ বিট", "মিনিটে ১০ থেকে ২০ বিট"]),
+        ("How should you communicate with a patient who is hard of hearing?", "শ্রবণশক্তি দুর্বল এমন রোগীর সাথে কীভাবে কথা বলবেন?", 
+         ["Speak clearly, face them, and avoid shouting", "Shout as loud as possible", "Use only hand gestures", "Talk from another room"], 
+         ["স্পষ্টভাবে, তাদের দিকে তাকিয়ে কথা বলা এবং চিৎকার না করা", "যত জোরে সম্ভব চিৎকার করা", "শুধু হাতের ইশারা ব্যবহার করা", "অন্য ঘর থেকে কথা বলা"]),
+        ("What is the correct way to handle soiled linens?", "ময়লা বা নোংরা বিছানার চাদর কীভাবে সামলানো উচিত?", 
+         ["Wear gloves and place them in a designated laundry bag", "Shake them out in the room", "Wash them with dishes", "Leave them on the floor"], 
+         ["গ্লাভস পরে নির্দিষ্ট লন্ড্রি ব্যাগে রাখা", "ঘরের ভেতরে ঝাড়া দেওয়া", "থালাবাসনের সাথে ধোয়া", "মেঝেতে ফেলে রাখা"]),
+        ("Which nutrient is essential for wound healing?", "ক্ষত নিরাময়ের জন্য কোন পুষ্টি উপাদানটি জরুরি?", 
+         ["Protein", "Sugar", "Fat", "Sodium"], 
+         ["প্রোটিন", "চিনি", "ফ্যাট", "সোডিয়াম"]),
+        ("What is hypertension?", "হাইপারটেনশন (Hypertension) কী?", 
+         ["High blood pressure", "Low blood sugar", "High heart rate", "Low body temperature"], 
+         ["উচ্চ রক্তচাপ", "নিম্ন রক্তে শর্করা", "উচ্চ হার্ট রেট", "নিম্ন শরীরের তাপমাত্রা"]),
+        ("Why is maintaining oral hygiene important for the elderly?", "বয়স্কদের জন্য দাঁত ও মুখের যত্ন কেন গুরুত্বপূর্ণ?", 
+         ["It prevents infections and improves nutrition", "It makes teeth whiter", "It stops hair loss", "It improves eyesight"], 
+         ["এটি সংক্রমণ রোধ করে এবং পুষ্টি বাড়ায়", "দাঁত সাদা করে", "চুল পড়া বন্ধ করে", "দৃষ্টিশক্তি উন্নত করে"]),
+        ("What is a common sign of a stroke?", "স্ট্রোকের একটি সাধারণ লক্ষণ কোনটি?", 
+         ["Sudden weakness or numbness on one side of the body", "A sudden rash", "Persistent coughing", "A mild headache"], 
+         ["শরীরের একপাশে হঠাৎ দুর্বলতা বা অবশ হয়ে যাওয়া", "হঠাৎ র‍্যাশ ওঠা", "টানা কাশি", "হালকা মাথাব্যথা"]),
+        ("How should you assist a patient with Alzheimer's who is confused?", "আলঝেইমার রোগী বিভ্রান্ত হলে কীভাবে সাহায্য করবেন?", 
+         ["Remain calm, reassure them, and gently redirect their attention", "Argue with them to correct their memory", "Ignore them", "Lock them in a room"], 
+         ["শান্ত থাকা, আশ্বস্ত করা এবং ধীরে ধীরে মনোযোগ অন্যদিকে নেওয়া", "স্মৃতি ঠিক করতে তাদের সাথে তর্ক করা", "এড়িয়ে যাওয়া", "ঘরে তালাবন্ধ করে রাখা"]),
+        ("What is the best way to monitor a diabetic patient's condition?", "ডায়াবেটিস রোগীর অবস্থা পর্যবেক্ষণের সেরা উপায় কী?", 
+         ["Regularly check their blood glucose levels", "Measure their height", "Check their hair growth", "Ask them how they feel occasionally"], 
+         ["নিয়মিত রক্তের গ্লুকোজ লেভেল পরীক্ষা করা", "উচ্চতা মাপা", "চুলের বৃদ্ধি পরীক্ষা করা", "মাঝে মাঝে কেমন লাগছে তা জিজ্ঞেস করা"]),
+        ("What is the purpose of a wheelchair transfer belt?", "হুইলচেয়ার ট্রান্সফার বেল্টের উদ্দেশ্য কী?", 
+         ["To safely assist the patient in moving without causing injury", "To tie the patient to the chair", "To carry luggage", "To support their neck"], 
+         ["রোগীকে আঘাত না দিয়ে নিরাপদে নড়াচড়ায় সাহায্য করা", "রোগীকে চেয়ারের সাথে বেঁধে রাখা", "লাগেজ বহন করা", "ঘাড়ে সাপোর্ট দেওয়া"]),
+        ("What should you do if a patient refuses to eat?", "রোগী খেতে অস্বীকৃতি জানালে কী করবেন?", 
+         ["Find out why, offer choices, and report it if it continues", "Force feed them", "Take their plate away immediately", "Scold them"], 
+         ["কারণ বের করা, বিকল্প দেওয়া এবং টানা চলতে থাকলে রিপোর্ট করা", "জোর করে খাওয়ানো", "সাথে সাথে প্লেট সরিয়ে নেওয়া", "বকা দেওয়া"])
+    ]
+}
+
+def format_questions(qs_list, domain_en, domain_bn):
+    out = []
+    for q_en, q_bn, opts_en, opts_bn in qs_list:
+        opt_str_en = "['" + "', '".join([o.replace("'", "\\'") for o in opts_en]) + "']"
+        opt_str_bn = "['" + "', '".join([o.replace("'", "\\'") for o in opts_bn]) + "']"
+        out.append(f"""      {{
+        domain: language === 'bn' ? '{domain_bn.replace("'", "\\'")}' : '{domain_en.replace("'", "\\'")}',
+        q: language === 'bn' ? '{q_bn.replace("'", "\\'")}' : '{q_en.replace("'", "\\'")}',
+        options: language === 'bn' ? {opt_str_bn} : {opt_str_en}
+      }}""")
+    return ",\n".join(out)
+
+office_code = format_questions(qs_data['office'], 'Digital & Admin', 'ডিজিটাল ও অ্যাডমিন')
+tech_code = format_questions(qs_data['technical'], 'Technical Safety', 'কারিগরি ও নিরাপত্তা')
+care_code = format_questions(qs_data['care'], 'Patient Care', 'রোগীর যত্ন')
+
+file_content = f'''import React, {{ useState }} from 'react';
+import {{ useNavigate }} from 'react-router-dom';
+import {{ ClipboardList, CheckCircle2, ArrowRight, Laptop, Zap, HeartPulse }} from 'lucide-react';
+import {{ useLanguage }} from '../LanguageContext';
+
+const Assessment = () => {{
+  const [track, setTrack] = useState<string | null>(null);
+  const [step, setStep] = useState(0);
+  const navigate = useNavigate();
+  const {{ language }} = useLanguage();
+
+  const tracks = [
+    {{ id: 'office', icon: Laptop, title: language === 'bn' ? 'অফিস ও ডিজিটাল' : 'Office & Digital', desc: language === 'bn' ? 'কম্পিউটার অপারেশন এবং অ্যাডমিন' : 'Computer Operations & Admin' }},
+    {{ id: 'technical', icon: Zap, title: language === 'bn' ? 'কারিগরি কাজ' : 'Technical Work', desc: language === 'bn' ? 'বৈদ্যুতিক এবং রক্ষণাবেক্ষণ' : 'Electrical & Maintenance' }},
+    {{ id: 'care', icon: HeartPulse, title: language === 'bn' ? 'স্বাস্থ্যসেবা' : 'Care Giving', desc: language === 'bn' ? 'রোগী ও বয়স্কদের সেবা' : 'Patient & Elderly Care' }}
+  ];
+
+  const questionsByTrack: Record<string, any[]> = {{
+    office: [
+{office_code}
+    ],
+    technical: [
+{tech_code}
+    ],
+    care: [
+{care_code}
+    ]
+  }};
+
+  const handleAnswer = () => {{
+    setStep(step + 1);
+  }};
+
+  if (!track) {{
+    return (
+      <div className="min-h-screen bg-gray-50 py-12 px-4 flex justify-center">
+        <div className="max-w-3xl w-full animate-in fade-in">
+          <div className="text-center mb-10">
+            <h1 className="text-3xl font-bold text-gray-900 mb-3">{{language === 'bn' ? 'আপনার আগ্রহ নির্বাচন করুন' : 'Select your interest track'}}</h1>
+            <p className="text-gray-600 font-medium">{{language === 'bn' ? 'আমরা আপনার আগ্রহ অনুযায়ী প্রশ্ন তৈরি করব।' : 'We will curate the assessment questions based on your track.'}}</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {{tracks.map(t => (
+              <button
+                key={{t.id}}
+                onClick={{() => {{ setTrack(t.id); setStep(0); }}}}
+                className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:border-brand-green hover:shadow-md transition-all text-center group"
+              >
+                <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-green-light transition-colors">
+                  <t.icon className="w-8 h-8 text-gray-500 group-hover:text-brand-green" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{{t.title}}</h3>
+                <p className="text-sm text-gray-500 font-medium">{{t.desc}}</p>
+              </button>
+            ))}}
+          </div>
+        </div>
+      </div>
+    );
+  }}
+
+  const questions = questionsByTrack[track];
+
+  if (step >= questions.length) {{
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+        <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-200 text-center max-w-md w-full animate-in zoom-in duration-300">
+          <div className="w-20 h-20 bg-brand-green-light rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle2 className="w-10 h-10 text-brand-green" />
+          </div>
+          <h2 className="text-3xl font-bold mb-3">{{language === 'bn' ? 'মূল্যায়ন সম্পন্ন' : 'Assessment Complete'}}</h2>
+          <p className="text-gray-600 mb-8 font-medium leading-relaxed">
+            {{language === 'bn' ? 'আপনার ডায়াগনস্টিক স্কোর রেকর্ড করা হয়েছে। এআই কোপাইলট আপনার শেখার পরিকল্পনা আপডেট করেছে।' : 'Your diagnostic scores have been recorded. The AI Copilot has updated your learning plan.'}}
+          </p>
+          <button 
+            onClick={{() => navigate('/journey')}}
+            className="w-full bg-brand-green text-white font-bold py-4 rounded-lg hover:bg-brand-green-dark transition-colors flex items-center justify-center gap-2 text-lg shadow-sm"
+          >
+            {{language === 'bn' ? 'আমার যাত্রা দেখুন' : 'View My Journey'}} <ArrowRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    );
+  }}
+
+  const currentQ = questions[step];
+
+  return (
+    <div className="min-h-screen bg-gray-50 py-12 px-4 flex justify-center">
+      <div className="max-w-2xl w-full">
+        <div className="mb-8 flex items-center gap-3">
+          <div className="p-2 bg-white rounded shadow-sm border border-gray-200">
+            <ClipboardList className="w-6 h-6 text-brand-green" />
+          </div>
+          <h1 className="text-2xl font-bold text-gray-900">{{language === 'bn' ? 'ডায়াগনস্টিক মূল্যায়ন' : 'Diagnostic Assessment'}}</h1>
+        </div>
+        
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8 md:p-10">
+          <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-5">
+            <span className="text-sm font-bold uppercase tracking-wider text-gray-500 bg-gray-50 px-3 py-1 rounded">{{currentQ.domain}} Module</span>
+            <span className="text-sm font-bold text-brand-green">Question {{step + 1}} of {{questions.length}}</span>
+          </div>
+          
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 leading-tight">{{currentQ.q}}</h2>
+          
+          <div className="space-y-4">
+            {{currentQ.options.map((opt: string, i: number) => (
+              <button
+                key={{i}}
+                onClick={{handleAnswer}}
+                className="w-full text-left px-6 py-4 rounded-lg border-2 border-gray-100 hover:border-brand-green hover:bg-brand-green-light font-bold text-gray-700 transition-all text-lg"
+              >
+                {{opt}}
+              </button>
+            ))}}
+          </div>
+          
+          <div className="mt-10 text-xs font-bold uppercase tracking-widest text-gray-400 text-center">
+            {{language === 'bn' ? 'স্কোর সহায়তার জন্য, মেরিট কাট-অফ নয়।' : 'Scores guide bridging support, not merit cut-offs.'}}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}};
+
+export default Assessment;
+'''
+
+with open('src/pages/Assessment.tsx', 'w', encoding='utf-8') as f:
+    f.write(file_content)
