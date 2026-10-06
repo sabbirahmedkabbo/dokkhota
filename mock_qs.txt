@@ -1,0 +1,306 @@
+    office: [
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 1 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 1 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 2 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 2 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 3 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 3 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 4 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 4 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 5 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 5 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 6 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 6 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 7 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 7 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 8 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 8 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 9 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 9 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 10 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 10 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 11 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 11 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 12 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 12 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 13 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 13 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 14 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 14 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 15 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 15 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 16 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 16 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 17 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 17 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 18 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 18 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 19 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 19 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'ডিজিটাল লিটারেসি' : 'Digital Literacy',
+        q: language === 'bn' ? 'মক প্রশ্ন 20 - ডিজিটাল লিটারেসি সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 20 - A general question related to Digital Literacy. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      }
+    ],
+    technical: [
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 1 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 1 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 2 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 2 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 3 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 3 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 4 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 4 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 5 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 5 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 6 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 6 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 7 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 7 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 8 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 8 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 9 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 9 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 10 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 10 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 11 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 11 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 12 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 12 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 13 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 13 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 14 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 14 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 15 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 15 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 16 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 16 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 17 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 17 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 18 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 18 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 19 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 19 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'নিরাপত্তা' : 'Safety Basics',
+        q: language === 'bn' ? 'মক প্রশ্ন 20 - নিরাপত্তা সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 20 - A general question related to Safety Basics. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      }
+    ],
+    care: [
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 1 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 1 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 2 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 2 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 3 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 3 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 4 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 4 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 5 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 5 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 6 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 6 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 7 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 7 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 8 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 8 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 9 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 9 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 10 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 10 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 11 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 11 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 12 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 12 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 13 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 13 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 14 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 14 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 15 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 15 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 16 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 16 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 17 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 17 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 18 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 18 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 19 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 19 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      },
+      {
+        domain: language === 'bn' ? 'রোগীর যত্ন' : 'Patient Care',
+        q: language === 'bn' ? 'মক প্রশ্ন 20 - রোগীর যত্ন সম্পর্কিত একটি সাধারণ প্রশ্ন। সঠিক উত্তরটি বেছে নিন।' : 'Mock Question 20 - A general question related to Patient Care. Choose the correct answer.',
+        options: language === 'bn' ? ['সঠিক উত্তর', 'ভুল উত্তর ১', 'ভুল উত্তর ২', 'ভুল উত্তর ৩'] : ['Correct Answer', 'Wrong Answer 1', 'Wrong Answer 2', 'Wrong Answer 3']
+      }
+    ]
